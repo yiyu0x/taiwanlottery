@@ -40,6 +40,7 @@ def wei_li():
 			elif 6 < counter <= 12:
 				wei_li__sorted.append(match.group(1))
 	print("******************威力彩******************")
+	print("******************38樂合彩****************")
 	print(date[1],periods[1])
 	print('*******開獎順序*******',''.join(wei_li__order))
 	print('*******大小排序*******',''.join(wei_li__sorted))
@@ -60,6 +61,7 @@ def big_lottery():
 				big_lottery__sorted.append(match.group(1))
 
 	print("******************大樂透******************")
+	print("******************49樂合彩****************")
 	print(date[3],periods[3])
 	print('*******開獎順序*******',''.join(big_lottery__order))
 	print('*******大小排序*******',''.join(big_lottery__sorted))
@@ -71,23 +73,24 @@ def colorful_539():
 	colorful_539__sorted = lemon_ball[5:10]
 
 	print("******************今彩539*****************")
+	print("******************39樂合彩****************")
 	print(date[6],periods[6])
 	print('*******開獎順序*******',''.join(colorful_539__order))
 	print('*******大小排序*******',''.join(colorful_539__sorted))
 	print("******************************************")
 
-def happy_39():
-	happy_39__order  = lemon_ball[10:15]
-	happy_39__sorted = lemon_ball[15:20]
-	counter = 0
+# def happy_39():
+# 	happy_39__order  = lemon_ball[10:15]
+# 	happy_39__sorted = lemon_ball[15:20]
+# 	counter = 0
 
-	print("******************39樂合彩*****************")
-	print(date[7],periods[7])
-	print('*******開獎順序*******',''.join(happy_39__order))
-	print('*******大小排序*******',''.join(happy_39__sorted))
-	print("******************************************")
-	
+# 	print("******************39樂合彩*****************")
+# 	print(date[7],periods[7])
+# 	print('*******開獎順序*******',''.join(happy_39__order))
+# 	print('*******大小排序*******',''.join(happy_39__sorted))
+# 	print("******************************************")
+print("******************************************")
 wei_li()
 big_lottery()
 colorful_539()
-happy_39()
+# happy_39()
