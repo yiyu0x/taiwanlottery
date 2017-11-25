@@ -16,15 +16,13 @@
 date    = []#Announced date
 periods = [] #Number of periods
 ```
-# 完成進度
+# 待完成
 
-- 威力彩
+- 三星彩
 
-- 大樂透
+- 四星彩
 
-- 今彩539
-
-- 39合樂彩
+- BINGO BINGO
 
 # 螢幕截圖
 
