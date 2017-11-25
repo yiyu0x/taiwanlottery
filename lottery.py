@@ -81,7 +81,7 @@ def happy_39():
 	happy_39__sorted = lemon_ball[15:20]
 	counter = 0
 
-	print("******************今彩539*****************")
+	print("******************39樂合彩*****************")
 	print(date[7],periods[7])
 	print('*******開獎順序*******',''.join(happy_39__order))
 	print('*******大小排序*******',''.join(happy_39__sorted))
