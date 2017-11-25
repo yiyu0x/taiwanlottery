@@ -28,4 +28,4 @@ periods = [] #Number of periods
 
 # 螢幕截圖
 
-![screenshoot](https://i.imgur.com/bHfYPHH.png)
+![screenshoot](https://i.imgur.com/undefined.png)
