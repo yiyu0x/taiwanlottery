@@ -3,11 +3,11 @@
 
 # taiwan_lottery
 
-程式內容由[台灣彩卷](http://www.taiwanlottery.com.tw/index_new.aspx)擷取，兌獎還是請由台灣彩卷官網為主。
+程式內容由[台灣彩券](http://www.taiwanlottery.com.tw/index_new.aspx)擷取，兌獎還是請由台灣彩券官網為主。
 
 # 程式邏輯
 
-[台灣彩卷](http://www.taiwanlottery.com.tw/index_new.aspx)官網的source code把開獎球號顏色區隔，於是先把全部球依照顏色爬取，之後取用只要對照官網顏色就可以取用
+[台灣彩券](http://www.taiwanlottery.com.tw/index_new.aspx)官網的source code把開獎球號顏色區隔，於是先把全部球依照顏色爬取，之後取用只要對照官網顏色就可以取用
 
 開獎日期 開獎期號 也是一次爬取到list中 之後在依照網頁的source code的blocl區隔來抓取
 
