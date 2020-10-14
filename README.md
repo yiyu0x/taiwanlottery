@@ -18,12 +18,7 @@ periods = [] #Number of periods
 ```
 # 待完成
 
-- 三星彩
-
-- 四星彩
-
-- BINGO BINGO
 
 # 螢幕截圖
 
-![screenshoot](https://i.imgur.com/3PAd2hf.png)
+![screenshoot](https://i.imgur.com/VBA4xXU.png)
