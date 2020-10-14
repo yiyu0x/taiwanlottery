@@ -79,6 +79,69 @@ def colorful_539():
 	print('*******大小排序*******',''.join(colorful_539__sorted))
 	print("******************************************")
 
+
+''' Bingo Bingo '''
+def bingoBingo():
+    bingoDiv = soup.find('div', class_='contents_box01')
+
+    yellowBalls = bingoDiv.find_all("div", class_='ball_tx ball_yellow')    # 開出獎號
+    redBall = bingoDiv.find('div', class_='ball_red')                       # 超級獎號
+    blueBall = bingoDiv.find('div', class_='ball_blue_BB1')                 # 猜大小
+    purpleBall = bingoDiv.find('div', class_='ball_blue_BB2')               # 猜單雙
+
+    print('****************Bingo Bingo***************')
+    print(date[0], periods[0])
+    print('*******開出獎號*******')
+    for index, number in enumerate(yellowBalls):
+        print(number.text, end='')
+        if index == (len(yellowBalls)/2-1):
+            print('')
+    print('')
+    print('*******超級獎號******* {}'.format(redBall.text))
+    print('********猜大小******** {}'.format(blueBall.text))
+    print('********猜單雙******** {}'.format(purpleBall.text))
+    print('******************************************')
+
+def doubleWin():
+    bingoDiv = soup.find('div', class_='contents_box06')
+
+    balls = bingoDiv.find_all("div", class_='ball_tx ball_blue')
+
+    print('*****************雙贏彩*******************')
+    print(date[1], periods[1])
+    print('*******開獎順序*******')
+
+    for index, number in enumerate(balls):
+        print(number.text, end='')
+        if index == (len(balls)/2-1):
+            print('\n*******大小順序*******\n', end='')
+    print('\n******************************************')
+
+''' 三星彩 '''
+def threeStar():
+    bingoDiv = soup.find_all('div', class_='contents_box04')
+
+    balls = bingoDiv[0].find_all("div", class_='ball_tx ball_purple')
+    
+    print('*****************三星彩*******************')
+    print(date[-2], periods[-2])
+    print('*******中獎號碼*******', end=' ')
+    for number in balls:
+        print(number.text, end=' ')
+    print('\n******************************************')
+''' 四星彩 '''
+def fourStar():
+    bingoDiv = soup.find_all('div', class_='contents_box04')
+
+    balls = bingoDiv[1].find_all("div", class_='ball_tx ball_purple')
+    
+    print('*****************四星彩*******************')
+    print(date[-1], periods[-1])
+    print('*******中獎號碼*******', end=' ')
+    for number in balls:
+        print(number.text, end=' ')
+    print('\n******************************************')
+
 # def happy_39():
 # 	happy_39__order  = lemon_ball[10:15]
 # 	happy_39__sorted = lemon_ball[15:20]
@@ -94,3 +157,7 @@ wei_li()
 big_lottery()
 colorful_539()
 # happy_39()
+bingoBingo()
+doubleWin()
+threeStar()
+fourStar()
