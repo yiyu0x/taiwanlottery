@@ -18,11 +18,6 @@ periods = [] #Number of periods
 ```
 # 待完成
 
-- 三星彩
-
-- 四星彩
-
-- BINGO BINGO
 
 # 螢幕截圖
 
