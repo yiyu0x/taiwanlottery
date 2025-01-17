@@ -1,24 +1,19 @@
-# 序
-昨天剛好逛到[vliucc](https://github.com/vliucc/taiwanlottery)的taiwanlottery project，發了issue問一下發現沒有回應，於是乾脆自己開一個project來做
-
 # taiwan_lottery
 
-程式內容由[台灣彩券](http://www.taiwanlottery.com.tw/index_new.aspx)擷取，兌獎還是請由台灣彩券官網為主。
+The program retrieves data from [Taiwan Lottery](http://www.taiwanlottery.com.tw/index_new.aspx). For prize verification, please refer to the official Taiwan Lottery website.
 
-# 程式邏輯
+# Program Logic
 
-[台灣彩券](http://www.taiwanlottery.com.tw/index_new.aspx)官網的source code把開獎球號顏色區隔，於是先把全部球依照顏色爬取，之後取用只要對照官網顏色就可以取用
+The source code of the [Taiwan Lottery](http://www.taiwanlottery.com.tw/index_new.aspx) website separates the colors of the winning numbers. Therefore, all numbers are first crawled by color. Once retrieved, the colors can be matched to the official website for usage.
 
-開獎日期 開獎期號 也是一次爬取到list中 之後在依照網頁的source code的blocl區隔來抓取
+Both the draw date and draw period are crawled into a list at once. Subsequently, these are extracted based on the block division in the webpage's source code.
 
-開獎日期 開獎期號的變數名稱
+Variables for the draw date and draw period:
 ```python
-date    = []#Announced date
-periods = [] #Number of periods
+date    = [] # Announced date
+periods = [] # Number of periods
 ```
-# 待完成
 
-
-# 螢幕截圖
+# Screenshot
 
 ![screenshoot](https://i.imgur.com/VBA4xXU.png)
